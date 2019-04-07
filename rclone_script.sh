@@ -114,7 +114,7 @@ function showNotification ()
 	fi
 	
 	# create PNG using IMAGEMAGICK
-	convert -size 500x32 xc:"rgba(0,0,0,0)" -type truecolormatte -gravity NorthWest \
+	convert -size 750x32 xc:"rgba(0,0,0,0)" -type truecolormatte -gravity NorthWest \
 			-pointsize 8 -font FreeMono -style italic \
 			-fill ${color} -draw "text 0,0 '${message}'" \
 			PNG32:- > ~/scripts/rclone_script/rclone_script-notification.png
